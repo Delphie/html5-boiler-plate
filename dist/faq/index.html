@@ -25,11 +25,11 @@
   <body>
     <!-- Add your site or application content here -->
     <header>
-      <div class="logo"><!--logo-->
+      <div class="content-wrapper">
         <a href="#"><img src="" alt="unplugged logo"</a>
       </div>
-      <div class="header_title">
-        <h1>Unplugged</h1>
+      <div class="header_divider">
+        <!--<h1>Unplugged</h1>-->/
       </div>
       <nav><!--navigation bar-->
         <ul><!--Faq-->
@@ -40,62 +40,79 @@
       </nav>
     </header>
 
-    <main>
-      <section>
+    <main class="faq">
+      <div class="content-wrapper"><
+          <h2>Frequently Asked Questions</h2>
+              <div class="faq-content">
+                <h4>How do I get to the Unplugged retreat?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+              </div><!--faq-content-->
+              <div class="faq-content">
+                <h4>What size teams do you accomodate?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+              </div><!--faq-content-->
+              <div class="faq-content">
+                <h4>Is there really no wifi available?</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+              </div><!--faq-content-->
+       </div>
+  
+  </main>
 
-      </section>
+  <footer>
+    <div class="content-wrapper">
+      <div class="footer-content">
+        <div class="contact">
+          <h4>Contact</h4>
+          <address>
+            <p>
+              555-555-5555<br>
+              hello@unplugged.com
+            </p>
+          </address>
+        </div>
+        <div class="social">
+          <h4>Social</h4>
+          <div class="social-icons">
+            <p>
+              <a href="https://www.facebook.com/Skillcrush/" target="_blank"></a>
+            </p>
+            <p>
+              <a href="https://twitter.com/Skillcrush" target="_blank"></a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/skillcrush/" target="_blank"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- footer content ends -->
+    </div>
+    <!--footer content-wrapper ends-->
+    <div class="copyright">
+      <p>Copyright 2018 | Unplugged</p>
+    </div>
+  </footer>
 
-      <aside><p>
-        
-      </p></aside>
-<!--Headline"Hero-area-->
-<!--Newsletter Signup"aside"
-  Headline Text
-  Paragraph Text
-  Headline Text
-  Email field
-  Submit button-->
+  <script src="../js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="../js/vendor/jquery-3.3.1.min.js"><\/script>')
+  </script>
+  <script src="../js/plugins.js"></script>
+  <script src="../js/main.js"></script>
 
-<!--Info about Unplugged"features"
-  Headline text
-  Icons
-  Text-->
-<!--Previous Retreats"reviews"
-  Headlime text
-  Paragraph text
-  Image
--->
-    </main>
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function() {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+</body>
 
-    <footer>
-      <div class="footer_content_wrap">
-        <div class="footer_content">
-          
-          <!--<h3>Contact</h3>contact header-->
-          <div class="contact_header">
-          <div><!--contact information-->
-            <address>
-            </address>
-          </div><!--contact information ends-->
-        </div><!--contact_header ends-->
-          <div class="social_header"><h3>Social</h3><!--social media header-->
-            <div class="social_icons"><!--social icons-->
-              <p><a href="https://wwww.facebook.com/yoursite" target="_blank" rel="noopener"></a></p>
-              <!-- other social links here-->
-              <!--<p><a href="#" target="blank" rel="*noopener"></a></p>
-              -->
-              <!--<p><a href="#" target="blank" rel="*noopener"></a></p>
-              -->
-              
-            </div><!--social icons ends-->
-          </div><!--social header ends-->
-
-        </div><!-- footer content ends-->
-      </div><!-- footer content-wrapper ends-->
-      <div class="copy_right"></div>
-    </footer>
-
-    <script src="../js/vendor/modernizr-3.12.0.min.js"></script>
-    <script src="../js/app.js"></script>
-  </body>
 </html>
