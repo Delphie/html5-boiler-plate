@@ -15,19 +15,15 @@ html {
   color: #222;
   font-size: 1em;
   line-height: 1.4;
+  /*padding: 0 5% 0 5%;*/
 }
-
-/*.form-description {
-}
-
-.form {
-}
-2*/
-/**Section 1**/
 
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
  *
  * Customize the background color to match your design.
  */
@@ -92,7 +88,18 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-/* -------------------- Base Header - Footer Styles -------------------- */
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+  /*width 100%;*/
+}
+
+/* Header styles */
+
+header {
+  /*margin: 15px 0 10px;*/
+  padding: 15px 0;
+}
 
 header,
 footer {
@@ -101,11 +108,20 @@ footer {
   align-items: center;
   flex-flow: row wrap;
 }
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  /*width: 60%;*/
+  margin: 0;
+}
+.header-divider {
+  width: 90%;
+  height: 1px;
+  margin: 10px 0 20px;
+  /*added height and 20px on margin*/
 }
 
 header nav {
@@ -113,44 +129,103 @@ header nav {
   justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  /*width: 60%;
+  text-decoration: none;
+  margin: 20px 0 15px;*/
 }
+
+/* -------------------- Base Header - Footer Styles -------------------- */
+footer{
+  flex-direction:column;
+}/* add footer property flex direction*/
+
+footer p{
+  margin:0;
+}/*added margin*/
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+footer.contact {
+  margin-bottom:50px;
+}/*added margin bottom*/
 
 footer .social-icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-footer .social p {
+footer .social-icons5 p {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+footer .copyright{
+  margin:20px 0;8
+}/* added copyright*/
 /* -------------------- Mobile Styles - Homepage -------------------- */
 
 /* Hero Area */
+
 .hero-area {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  /*margin: 50px 0;*/
 }
 
 aside {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   flex-flow: row wrap;
+  /*margin: 50px 0 30px;*//
 }
 
+/*aside h3 {
+  margin: 20px 0 20px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 20px 0 20px 0;
+}
+/*input text email
+input[type="text" i] {
+  padding: 1em;
+}
+/*download itinerary button below
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  padding: 20px;
+}
+*/
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  /*width: 90%;*/
 }
+.features h2{
+  margin-bottom:60px;
+}
+.features article{
+  width:63%;
+  margin:30px 0;
+}/* added features h2 and article*/
+
 .features .features-items {
   display: flex;
   justify-content: center;
@@ -158,14 +233,36 @@ aside {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin:0;
+}
 /* Reviews */
 
-.review {
+.reviews  {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   flex-flow: row wrap;
+  /*width: 90%;*/
 }
+
+.reviews h2{
+  margin-bottom:40px;
+}
+
+.reviews h3{
+  width:55%;
+  margin:20px 0;
+}
+
+
+/*.fontawesome-icon {
+}
+
+.features-item-description {
+  padding: 40px 0 30px;
+}*/
+
 /* ==========================================================================
    About Page
    ========================================================================== */
@@ -184,6 +281,9 @@ aside {
   flex-flow: row wrap;
 }
 
+.contact-content p{
+  margin:0;
+}
 /* ==========================================================================
    FAQ Page
    ========================================================================== */
@@ -200,6 +300,14 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.faq h2{
+  margin-bottom:40px;
+}
+
+.faq-content{
+  margin-bottom:50px;
 }
 
 /* ==========================================================================
